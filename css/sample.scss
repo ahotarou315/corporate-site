@@ -202,6 +202,12 @@ header{
 #service_area{
 
   padding-top:20px;
+  
+  .container{
+    max-width:960px;
+    padding:0 20px;
+    position:relative;
+  }
 
   @media (min-width: 550px) {
         padding-top: 30px;
@@ -465,18 +471,16 @@ h1{
   background-size: cover;
   color:#222222;
   display:block;
-  line-height:24px;
   
   .columns{
     box-sizing:border-box;
     float:left;
-    width:320px;
   
     h2{
       text-align:center;
       color:#ffffff;
       display:block;
-      font-size:16px;
+      font-size:32px;
       letter-spacing:2px;
       line-height:20px;
       margin:0 0;
@@ -574,7 +578,7 @@ h1{
       padding-bottom:20px;
       
       div.pc_sidemenu{
-        display:none;
+        display:block;
         
         h3{
           background-color:#f3f9fb;
@@ -588,9 +592,11 @@ h1{
         }
         
         ul li{
-          background-image:url("../images/news/side_arrow@2x.png");
+          background-image:url("../images/news/side_arrow.png");
           background-position-x:8px;
           background-position-y:50%;
+          background-repeat-x:no-repeat;
+          background-repeat-y:no-repeat;
           background-size:4px 8px;
           border-bottom-color:#e5e5e5;
           border-bottom-style:solid;
@@ -616,9 +622,8 @@ h1{
     padding-bottom:70px;
     
     .container{
-      margin:0 75.5px;
+      margin:0 auto;
       padding:0 0;
-      width:604px;
       
         div#main.nine.columns{
           padding-right:20px;
@@ -640,21 +645,12 @@ h1{
         }
         .pc_sidemenu{
           display:block;
-          height:207px;
-          width:132.875px;
             
             h3{
               height:18px;
             }
-            ul{
-              height:159px;
-              width:132.875px;
-              
               li{
-                height:24px;
                 margin-bottom:0;
-                width:102.875px;
-              }
             }
         }
     }

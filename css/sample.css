@@ -111,6 +111,10 @@ header {
 
 #service_area {
   padding-top: 20px; }
+  #service_area .container {
+    max-width: 960px;
+    padding: 0 20px;
+    position: relative; }
   @media (min-width: 550px) {
     #service_area {
       padding-top: 30px; } }
@@ -251,17 +255,15 @@ h1 {
   background-image: url("../images/news/sub_cover.jpg");
   background-size: cover;
   color: #222222;
-  display: block;
-  line-height: 24px; }
+  display: block; }
   #sub_cover .columns {
     box-sizing: border-box;
-    float: left;
-    width: 320px; }
+    float: left; }
     #sub_cover .columns h2 {
       text-align: center;
       color: #ffffff;
       display: block;
-      font-size: 16px;
+      font-size: 32px;
       letter-spacing: 2px;
       line-height: 20px;
       margin: 0 0;
@@ -331,7 +333,7 @@ h1 {
   #contents #sidebar {
     padding-bottom: 20px; }
     #contents #sidebar div.pc_sidemenu {
-      display: none; }
+      display: block; }
       #contents #sidebar div.pc_sidemenu h3 {
         background-color: #f3f9fb;
         color: #42b9d0;
@@ -342,9 +344,11 @@ h1 {
         padding: 15px 15px;
         -webkit-margin-after: 0; }
       #contents #sidebar div.pc_sidemenu ul li {
-        background-image: url("../images/news/side_arrow@2x.png");
+        background-image: url("../images/news/side_arrow.png");
         background-position-x: 8px;
         background-position-y: 50%;
+        background-repeat-x: no-repeat;
+        background-repeat-y: no-repeat;
         background-size: 4px 8px;
         border-bottom-color: #e5e5e5;
         border-bottom-style: solid;
@@ -362,9 +366,8 @@ h1 {
       padding-top: 35px;
       padding-bottom: 70px; }
       #contents .container {
-        margin: 0 75.5px;
-        padding: 0 0;
-        width: 604px; }
+        margin: 0 auto;
+        padding: 0 0; }
         #contents .container div#main.nine.columns {
           padding-right: 20px; }
           #contents .container div#main.nine.columns h2 {
@@ -378,18 +381,11 @@ h1 {
               padding-right: 10px;
               display: imline-block; }
         #contents .container .pc_sidemenu {
-          display: block;
-          height: 207px;
-          width: 132.875px; }
+          display: block; }
           #contents .container .pc_sidemenu h3 {
             height: 18px; }
-          #contents .container .pc_sidemenu ul {
-            height: 159px;
-            width: 132.875px; }
-            #contents .container .pc_sidemenu ul li {
-              height: 24px;
-              margin-bottom: 0;
-              width: 102.875px; } }
+          #contents .container .pc_sidemenu li {
+            margin-bottom: 0; } }
 
 footer .container {
   max-width: 960px;
