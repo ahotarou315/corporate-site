@@ -18,8 +18,8 @@ header{
   background: $gray_blue;
 
   #header_in{
-    padding-top: 10px;
-    padding-bottom:4px;
+    padding:10px 20px 4px 20px;
+    max-width:960px;
   }
 
   @media (max-width: 550px) {
@@ -480,7 +480,7 @@ h1{
       text-align:center;
       color:#ffffff;
       display:block;
-      font-size:32px;
+      font-size:16px;
       letter-spacing:2px;
       line-height:20px;
       margin:0 0;
@@ -498,25 +498,22 @@ h1{
     padding:80px 0;
     color:#222222;
     
-    div.container{
+    .container{
       box-sizing: content-box;
       margin:0 0;
       width:auto;
+      height:auto;
 
-      .columns{
-        width:775px;
-      
-        h2{
-          text-align:center;
-          color:#ffffff;
-          display:block;
-          font-size:32px;
-          font-weight:bold;
-          letter-spacing:2px;
-          line-height:40px;
-          margin:0;
-          text-size-adjust:100%;
-        }
+      h2{
+        text-align:center;
+        color:#ffffff;
+        display:block;
+        font-size:32px;
+        font-weight:bold;
+        letter-spacing:2px;
+        line-height:40px;
+        margin:0;
+        text-size-adjust:100%;
       }
     }
   }
